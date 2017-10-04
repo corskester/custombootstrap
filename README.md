@@ -1,32 +1,26 @@
 Customizing a Bootstrap SASS build with Bower
 =============================================
 
-This project demonstrates an example of customizing a Bootstrap SASS build.  This sample project uses Bower to install Bootstrap and Gulp to build the CSS with gulp-sass.
+Eerst in de juiste DIR: 
+npm install gulp --save-dev
+npm install bower --save-dev OF in GIT console: bower install
+in GIT console in de juiste map: bower install bootstrap#v.4.0.0-alpha.6
 
-To build the CSS, run `gulp`:
+pas evt. iets aan in root/css/_variables.scss ...
 
-    $ gulp
-
-Once you have built the CSS, open `index.html` in your web browser to view the customized Bootstrap template.
-
-To customize the build further, modify the variables in the `css/variables.scss` file.
-
-Before Customizing
-------------------
-
-![screenshot before customizations](screenshots/before.png?raw=true)
+gulp
 
 
-After Customizing
------------------
 
-![screenshot after customizations](screenshots/after.png?raw=true)
+Troubleshooting
+---------------
 
-Notice the 16px Calibri font and the weird color customizations?
+If your node version is 4 and you are using gulp-sass, then try
 
-Copying
--------
+npm uninstall --save-dev gulp-sass
 
-To the extent possible under law, the author has dedicated all copyright and related and neighboring rights to this software to the public domain worldwide. This software is distributed without any warranty.
+npm install --save-dev gulp-sass@2
 
-CC0 Public Domain Dedication license: http://creativecommons.org/publicdomain/zero/1.0/
+Verdere bronnen
+---------------
+http://getbootstrap.com/docs/4.0/getting-started/contents/
