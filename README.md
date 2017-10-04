@@ -2,8 +2,11 @@ Customizing a Bootstrap SASS build with Bower
 =============================================
 
 Eerst in de juiste DIR: 
+
 npm install gulp --save-dev
+
 npm install bower --save-dev OF in GIT console: bower install
+
 in GIT console in de juiste map: bower install bootstrap#v.4.0.0-alpha.6
 
 pas evt. iets aan in root/css/_variables.scss ...
